@@ -6,42 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mi tienda donde vas a encotrar todo tipo de articulos de marvel">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="./assets/Hover-master/css/hover.css" rel="stylesheet" media="all">
+
     <link rel="stylesheet" href="styles.css">
     <title>Marvel Shop</title>
 </head>
 <body>
-    <header>
-        <h1>The Marvel Store</h1>
-     
-        <nav class="menu">
-            <i class="fas fa-align-justify icon-menu fa-2x"></i>
-            <ul class="dropdown">
-                <a href=""><li>Tu cuenta</li></a>
-                <a href=""><li>Sobre nosotros</li></a>
-                <a href=""><li>Donde estamos</li></a>
-                <a href=""><li>Envios</li></a>
+    <header class="nav-flex">
+
+        <div class="navigation-title">
+
+            <h1><a href="">Marvel Store</a></h1>
+
+            <nav class="menu">    
+                <i class="fas fa-align-justify icon-menu fa-2x"></i>
+                <ul class="dropdown">
+                    <a href=""><li class="nav-bar"><i class="fab fa-whatsapp fa-2x hvr-grow"></i></li></a>
+                    <a href=""><li class="nav-bar"><i class="fas fa-user-circle fa-2x hvr-grow"></i></li></a>
+                    <a href=""><li class="nav-bar"><i class="fas fa-shopping-basket fa-2x hvr-grow"></i></li></a>
+                </ul>
+            </nav>
+        </div>
+   </header>
+        <nav class="categories">
+            <ul>
+                <a href=""><li class="nav-bar categories-bar hvr-underline-from-center">Destacados</li></a>
+                <a href=""><li class="nav-bar categories-bar hvr-underline-from-center">Comics</li></a>
+                <a href=""><li class="nav-bar categories-bar hvr-underline-from-center">Ropa</li></a>
+                <a href=""><li class="nav-bar categories-bar hvr-underline-from-center">Posters</li></a>
+                <a href=""><li class="nav-bar categories-bar hvr-underline-from-center">Figuras</li></a>
+
             </ul>
         </nav>
-    </header>
+    
+
+ 
     
     <section class="description">
-        <p>Bienvenido a Marvel Store.</p>
         <p>Los mejores articulos de tus superheroes favoritos.</p>
     </section>
 
     <main>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 
-        <div class="img-container">
+        <div class="container-sticker ">
+            <div class="sticker"></div>
+            <div class="msg">New!</div>
+        </div>
+
+        <div class="img-container ">
 
              <span class="heart">
-                 <i class="fas fa-heart fa-1x"></i>
+                 <i class="fas fa-heart fa-1x "></i>
              </span>
 
-             <a href="#">
+             <a href="./compra.html">
                 <img src="https://i.etsystatic.com/25395944/r/il/23af9a/2645838673/il_794xN.2645838673_ta43.jpg" alt="">
              </a>
 
@@ -56,7 +78,7 @@
 
     </div>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 
@@ -81,7 +103,7 @@
 
     </div>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 
@@ -106,7 +128,7 @@
 
     </div>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 
@@ -125,13 +147,13 @@
          <p class="descripcion-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsam aperiam alias.</p>
          <p class="precio">$1500</p>
 
-         <button>
+         <button >
              <a href="#">Ver mas</a>
          </button>
 
     </div>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 
@@ -150,13 +172,13 @@
          <p class="descripcion-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsam aperiam alias.</p>
          <p class="precio">$1500</p>
 
-         <button>
+         <button >
              <a href="#">Ver mas</a>
          </button>
 
     </div>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 
@@ -181,7 +203,7 @@
 
     </div>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 
@@ -200,13 +222,13 @@
          <p class="descripcion-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsam aperiam alias.</p>
          <p class="precio">$1500</p>
 
-         <button>
+         <button >
              <a href="#">Ver mas</a>
          </button>
 
     </div>
 
-    <div class="product">
+    <div class="product hvr-grow-shadow">
 
             <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
 

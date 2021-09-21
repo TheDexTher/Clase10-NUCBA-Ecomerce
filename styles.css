@@ -28,72 +28,110 @@
 /* General */
 *{
     margin: 0;
-    padding: 1%;
     font-family: 'Dosis', sans-serif;
 }
 body{
     background-color: var(--main-prusian-blue);
+    
 }
 
 /* header */
-
 header{
-    display: flex;
-    align-content: space-between;
     background-color: var(--main-whiter-blue);
-    padding: 8%;
-    margin: -2%;
-}
-.menu{
-    position: relative;
-    display: inline-block;
-    margin-left: auto;
-    color: var(--main-prusian-blue);
-}
-.menu:hover .dropdown {
-    display:block;
+    padding: 1%;
+    padding: 0;
 }
 .dropdown{
-    display: none;
-    position: absolute;
-    background-color: var(--main-prusian-blue);
-    min-width: 160px;
-    z-index: 5;
-    padding: 12px 16px;
-    right: -20px;
-    top: 50px;
-    -webkit-box-shadow: -12px 7px 18px 3px rgba(21,21,38,0.9); 
-    box-shadow: -12px 7px 18px 3px rgba(21,21,38,0.9);
+    margin-right: 4%;
+    text-align: right; 
+    padding: 1%;
+}
+.navigation-title{
+    width: 100%;
+    padding: 1% 0;
+    display: flex;
+    border-bottom: 1px solid var(--main-prusian-blue);
+}
+.nav-flex{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.categories{
+    background-color: var(--main-whiter-blue);
+    width: 100%;
+    z-index: 3;
+    padding: 0px;
+    position: sticky;
+    top: 0px;
+    padding: 1% 0% 1.5%;
+}
+.categories ul{
+    text-align: center; 
+}
+.menu{
+    width: 70%;
+    padding: 0;
+    color: var(--main-prusian-blue);
+  
+}
+
+.nav-bar{
+    border-bottom: 1px solid var(--main-whiter-blue);
+    list-style: none;
+    color: var(--main-prusian-blue);
+    padding: 0px;
+    font-weight: normal;
+    display: inline;
+    font-size: 1.4em;
+    padding: 0.8%;
+    margin: 0 1%;
+    
+}
+.categories-bar{
+    margin: 0 5%;
+    font-weight: normal;
 }
 
 .icon-menu{
-    margin: auto;
+    display: none;
+}
+ul a{
+    text-decoration: none;
 }
 
 /* cuerpo */
+
 h1{
+    padding: 1%;
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--main-prusian-blue);
+    width: 29%;
+    
+
+
+}
+h1 a{
+    text-decoration: none;
     font-family: "Marvel's Luke Cage Regular";
-    font-size: 1.2em;
     color: var(--main-prusian-blue);
 }
 p{
     color: var(--main-grey);
+
 }
-ul li{
-    border-bottom: 1px solid var(--main-whiter-blue);
-    list-style: none;
-    color: var(--main-grey);
-}
-ul a{
-    
-    text-decoration: none;
-}
+
+
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 95%;
-    text-align: center;
     margin: auto;
+    margin-top: 3%;
 }
 
 main img{
@@ -101,42 +139,86 @@ main img{
     height: 250px;
     padding: 0px;
     object-fit: cover;
-
+    border-radius: 7px;
 }
 
-.img-container{
-    position: relative;
-}
+
 
 .description{
-    margin: 4% 0;
-
+    background-color: var(--main-pastel-red);
     text-align: center;
+    width: 100%;
+    border: var(--main-red) solid 1px;
+    padding: .3% 0;
 } 
 .description p{
      color: var(--main-grey);
-     font-weight: bold;
+     font-weight: normal;
+     font-size: 1.3em;
+     padding: 0;
 
 }
 
 /* product */
+
 .product p{
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: left;
 
 }
 .precio{
     font-weight: bold;
     font-size: 1.2em;
 }
+.img-container, .container-sticker{
+    position: relative;
+
+    
+}
+.container-sticker{
+    z-index: 20;
+}
+.container-sticker .sticker{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background: url(./assets/sticker.png);
+    background-size: 75px;
+    filter: hue-rotate(200deg);
+    top: -50px;
+    right: -160px;
+    animation: spin 30s linear infinite;
+
+    }
+    @keyframes spin{
+        100%{
+            transform: rotate(1turn);
+        }
+    }
+.container-sticker .msg{
+    color: var(--main-grey);
+    text-align: center;
+    font-size: 1.5em;
+    width: 75px;
+    position: absolute;
+    top: -30px;
+    right: -160px;
+}
 .product{
+    padding: 1%;
     display: flex;
     flex-direction: column;
+    
+    margin: auto;
+    width: 240px;
     align-items: center;
+    margin-top: 1px;
     margin-bottom: 50px;
-    -webkit-box-shadow: 3px 7px 18px 1px rgba(0,0,0,0.9); 
-    box-shadow: 3px 7px 18px 1px rgba(0,0,0,0.9);
+    
+    box-shadow: 3px 7px 18px 1px rgba(0, 0, 0, 0.604);
 }
+
 .product button{
     margin: 5% 0;
     padding: 10px;
@@ -148,6 +230,28 @@ main img{
 
 
   
+}
+.product button:hover{
+    animation: hover-color 2s ease forwards ;
+}
+.product button:hover{
+    animation: deshover-color 3s ease forwards ;
+}
+@keyframes hover-color{
+    from{
+        background-color: var(--main-pastel-red);
+    }
+    to{
+        background-color: var(--main-red);
+    }
+}
+@keyframes deshover-color{
+    from{
+        background-color: var(--main-red);
+    }
+    to{
+        background-color: var(--main-pastel-red);
+    }
 }
 .heart{
     position: absolute;
@@ -166,47 +270,4 @@ main img{
     color: var(--main-grey);
     font-weight: 700;
     font-size: 1.1em;
-}
-
-
-@media screen and (min-width: 1024px) {
-    *{
-        padding: 0px;
-    }
-    h1{
-        font-size: 2em;
-        margin-top: auto;
-        margin-bottom: auto;
-        text-align: center;
-
-    }
-
-    
-    main{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .product{
-        width: 20%;
-        padding: 1%;
-    }
-    .description p{
-        font-size: 2em;
-    }
-    header{
-        padding: 2%;
-        -webkit-box-shadow: 0px 14px 20px -6px rgba(0,0,0,0.79); 
-    box-shadow: 0px 14px 20px -6px rgba(0,0,0,0.79);
-        margin: 0px;
-        position: sticky;
-        top: 0px;
-        z-index: 10;
-    }
-
-    ul li{
-        padding: 10%;
-        font-size: 1.3em;
-    
-    }
 }

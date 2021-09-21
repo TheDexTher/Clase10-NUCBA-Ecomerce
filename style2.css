@@ -1,0 +1,137 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap'); 
+/* font-family: 'Dosis', sans-serif; */
+
+/* Con fontface podemos inculir fuentes personalizadas que tengamos descargadas */
+@font-face {
+    font-family:"Marvel's Luke Cage Regular";
+    /* El font famili es una forma de llamar al font-face */
+    src:
+    url("./assets/Marvel_s_Luke_Cage_Regular/Marvel_s_Luke_Cage.eot") format("eot"),
+    url("./assets/Marvel_s_Luke_Cage_Regular/Marvel_s_Luke_Cage.woff") format("woff"),
+    url("assets/Marvel_s_Luke_Cage_Regular/Marvel_s_Luke_Cage.ttf") format("truetype"),
+    url("./assets/Marvel_s_Luke_Cage_Regular/Marvel_s_Luke_Cage.svg") format("svg");
+    font-weight:normal;
+    font-style:normal;
+
+}
+/* Colors */
+:root{
+    --main-prusian-blue: #2b2d42;
+    --main-whiter-blue:#8d99ae;
+    --main-grey:#edf2f4;
+    --main-pastel-red:#ef233c;
+    --main-red:#d90429;
+}
+
+/* General */
+*{
+    margin: 0;
+    padding: 1%;
+    font-family: 'Dosis', sans-serif;
+}
+body{
+    background-color: var(--main-prusian-blue);
+}
+
+/* header */
+
+header{
+    display: flex;
+    align-content: space-between;
+    background-color: var(--main-whiter-blue);
+    padding: 8%;
+    margin: -2%;
+}
+h1{
+    font-family:"Marvel's Luke Cage Regular";
+    font-size: 1.2em;
+    color: var(--main-prusian-blue);
+}
+.menu{
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    color: var(--main-prusian-blue);
+}
+.menu:hover .dropdown {
+    display:block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: var(--main-prusian-blue);
+    min-width: 160px;
+    z-index: 5;
+    padding: 12px 16px;
+    
+    right: -20px;
+    top: 50px;
+    -webkit-box-shadow: -12px 7px 18px 3px rgba(21,21,38,0.9); 
+    box-shadow: -12px 7px 18px 3px rgba(21,21,38,0.9);
+}
+ul li{
+    color: var(--main-grey);
+    list-style: none;
+    border-bottom: var(--main-whiter-blue) 1px solid;
+}
+ul a{
+    text-decoration: none;
+}
+/* cuerpo */
+.volver a{
+    font-size: 1em;
+    color: var(--main-grey);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1%;
+}
+:hover.volver a{
+    color: var(--main-whiter-blue);
+
+}
+/* product */
+
+img{
+    width: 95%;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+
+}
+.product p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.precio{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.product{
+
+    -webkit-box-shadow: 3px 7px 18px 1px rgba(0,0,0,0.9); 
+    box-shadow: 3px 7px 18px 1px rgba(0,0,0,0.9);
+}
+.product button{
+    margin: 5% 0;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--main-pastel-red);
+    border: 2px solid var(--main-red);
+
+
+  
+}
+.img-container:hover .heart{
+    opacity: 100%;
+}
+.product button a{
+    text-decoration: none;
+    color: var(--main-grey);
+    font-weight: 700;
+    font-size: 1.1em;
+}

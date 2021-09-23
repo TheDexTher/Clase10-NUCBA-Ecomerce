@@ -18,39 +18,53 @@
 }
 /* Colors */
 :root{
-    --main-prusian-blue: #2b2d42;
-    --main-whiter-blue:#8d99ae;
-    --main-grey:#edf2f4;
-    --main-pastel-red:#ef233c;
-    --main-red:#d90429;
+    --main-rich-black:#0b090a;
+    --main-Special-Black:#161a1d;
+    --main-ultra-dark-red:#660708;
+    --main-black-red:#a4161a;
+    --main-red:#ba181b;
+    --main-pastel-red:#e5383b;
+    --main-grey:#b1a7a6;
+    --main-whiter-grey:#d3d3d3;
+    --main-ultra-whiter-grey:#f5f3f4;
+    --main-white:#ffffff;
+
 }
 
 /* General */
 *{
     margin: 0;
     font-family: 'Dosis', sans-serif;
+    
 }
 body{
-    background-color: var(--main-prusian-blue);
+    background-color: var(--main-Special-Black);
     
 }
 
+
 /* header */
 header{
-    background-color: var(--main-whiter-blue);
+    background-color: var(--main-whiter-grey);
     padding: 1%;
-    padding: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 15;
 }
 .dropdown{
     margin-right: 4%;
     text-align: right; 
     padding: 1%;
+    width: 30%;
+}
+
+.icon-down-categories{
+    font-weight: lighter;
 }
 .navigation-title{
     width: 100%;
     padding: 1% 0;
     display: flex;
-    border-bottom: 1px solid var(--main-prusian-blue);
 }
 .nav-flex{
     display: flex;
@@ -59,40 +73,66 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.categories{
-    background-color: var(--main-whiter-blue);
-    width: 100%;
-    z-index: 3;
-    padding: 0px;
-    position: sticky;
-    top: 0px;
-    padding: 1% 0% 1.5%;
+.categories-menu:hover .categories-dropdown{
+    display: block;
+
 }
-.categories ul{
-    text-align: center; 
+.categories{
+    width: 70%;
+    text-align: right;
+    margin: auto;
+}
+.categories-menu{
+    position: relative;
+    cursor: pointer;
+}
+.categories-dropdown{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: var(--main-Special-Black);
+    z-index: 12;
+    top: 48px;
+    font-size: 0.9em;
+    width: 120px;
+    right: -20px;
+    padding: 10%;
+    box-shadow: 2px 8px 8px 2px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 2px 8px 8px 2px rgba(0,0,0,0.54);
+    -moz-box-shadow: 2px 8px 8px 2px rgba(0,0,0,0.54);
+    text-align: left;
+}
+.categories-dropdown a{
+    text-decoration: none;
+    color: var(--main-ultra-whiter-grey);
+}
+.categories-dropdown li:hover{
+    color: var(--main-rich-black);
+}
+
+.categories-font:hover{
+    border-bottom: 1px solid var(--main-Special-Black);
 }
 .menu{
     width: 70%;
     padding: 0;
-    color: var(--main-prusian-blue);
+    color: var(--main-Special-Black);
+    display: flex;
+    flex-direction: row;
   
 }
 
 .nav-bar{
-    border-bottom: 1px solid var(--main-whiter-blue);
     list-style: none;
-    color: var(--main-prusian-blue);
+    color: var(--main-Special-Black);
     padding: 0px;
     font-weight: normal;
     display: inline;
     font-size: 1.4em;
-    padding: 0.8%;
+    padding: 10px;
+    
     margin: 0 1%;
     
-}
-.categories-bar{
-    margin: 0 5%;
-    font-weight: normal;
 }
 
 .icon-menu{
@@ -108,7 +148,7 @@ h1{
     padding: 1%;
     font-size: 1.5em;
     text-align: center;
-    color: var(--main-prusian-blue);
+
     width: 29%;
     
 
@@ -117,10 +157,10 @@ h1{
 h1 a{
     text-decoration: none;
     font-family: "Marvel's Luke Cage Regular";
-    color: var(--main-prusian-blue);
+    color: var(--main-Special-Black);
 }
 p{
-    color: var(--main-grey);
+    color: var(--main-whiter-grey);
 
 }
 
@@ -131,7 +171,7 @@ main{
     flex-wrap: wrap;
     width: 95%;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 main img{
@@ -147,12 +187,13 @@ main img{
 .description{
     background-color: var(--main-pastel-red);
     text-align: center;
-    width: 100%;
-    border: var(--main-red) solid 1px;
+    margin: auto;
+    width: 99.88%;
+    border: var(--main-ultra-dark-red) solid 1px;
     padding: .3% 0;
 } 
 .description p{
-     color: var(--main-grey);
+     color: var(--main-ultra-whiter-grey);
      font-weight: normal;
      font-size: 1.3em;
      padding: 0;
@@ -185,7 +226,8 @@ main img{
     position: absolute;
     background: url(./assets/sticker.png);
     background-size: 75px;
-    filter: hue-rotate(200deg);
+    filter: hue-rotate(-191deg) sepia(0%) saturate(320%);
+
     top: -50px;
     right: -160px;
     animation: spin 30s linear infinite;
@@ -197,7 +239,7 @@ main img{
         }
     }
 .container-sticker .msg{
-    color: var(--main-grey);
+    color: var(--main-Special-Black);
     text-align: center;
     font-size: 1.5em;
     width: 75px;

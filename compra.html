@@ -5,24 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="./assets/Hover-master/css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="style2.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        
-        <h1>The Marvel Store</h1>
-     
-        <nav class="menu">
-        <i class="fas fa-align-justify icon-menu fa-2x"></i>
-            <ul class="dropdown">
-                <a href=""><li>Tu cuenta</li></a>
-                <a href=""><li>Sobre nosotros</li></a>
-                <a href=""><li>Donde estamos</li></a>
-                <a href=""><li>Envios</li></a>
-            </ul>
-        </nav>
-    </header>
+    <header class="nav-flex">
+
+        <div class="navigation-title">
+
+            <h1><a href="">Marvel Store</a></h1>
+
+            <nav class="menu">    
+                <i class="fas fa-align-justify icon-menu fa-2x"></i>
+                
+                <ul class="categories ">
+                    <li class="nav-bar categories-menu ">
+                        Categorias 
+                        <i class="fas fa-sort-down"></i>
+                            <ul class="categories-dropdown ">
+                                <a href="#"><li>Ropa</li></a>
+                                <a href="#"><li>Posters</li></a>
+                                <a href="#"><li>Llaveros</li></a>
+                                <a href="#"><li>Figuras</li></a>
+                                <a href="#"><li>Comics</li></a>
+                            </ul>
+                    </li>
+                    <a href=""><li class="nav-bar categories-font">Destacados</li></a>
+                    <a href=""><li class="nav-bar categories-font">Ofertas</li></a>
+
+                </ul>
+                <ul class="dropdown">
+                    <a href="#"><li class="nav-bar"><i class="fas fa-shopping-basket fa-2x hvr-grow"></i></li></a>
+                    <a href="#"><li class="nav-bar"><i class="fas fa-user-circle fa-2x hvr-grow"></i></li></a>
+
+                </ul>
+                   
+                
+            </nav>
+        </div>
+   </header>
+ 
 
     <section class="volver">
         <a href="">
@@ -36,18 +59,14 @@
 
         <div class="img-container">
 
-             <a href="./compra.html">
                 <img src="https://i.etsystatic.com/25395944/r/il/23af9a/2645838673/il_794xN.2645838673_ta43.jpg" alt="">
-             </a>
 
         </div>
-
-         <p class="descripcion-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsam aperiam alias.</p>
-         <p class="precio">$1500</p>
-
-         <button>
-             <a href="#">Comprar</a>
-         </button>
+        <div class="product-information">
+            <p class="descripcion-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsam aperiam alias.</p>
+            <p class="precio">$1500</p>
+  
+        </div>
 
     </div>
 </body>

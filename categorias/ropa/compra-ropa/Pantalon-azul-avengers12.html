@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="./assets/Hover-master/css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="../../../compra/style-compra.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="nav-flex">
+
+        <div class="navigation-title">
+            <i class="fas fa-align-justify icon-menu fa-2x"></i>
+                
+            <h1><a href="">Marvel Store</a></h1>
+
+            <nav class="menu">    
+
+                <ul class="categories ">
+                    <li class="nav-bar categories-menu ">
+                        Categorias 
+                        <i class="fas fa-sort-down"></i>
+                            <ul class="categories-dropdown ">
+                                <a href="#"><li>Ropa</li></a>
+                                <a href="#"><li>Posters</li></a>
+                                <a href="#"><li>Llaveros</li></a>
+                                <a href="#"><li>Figuras</li></a>
+                                <a href="#"><li>Comics</li></a>
+                            </ul>
+                    </li>
+                    <a href=""><li class="nav-bar categories-font">Destacados</li></a>
+                    <a href=""><li class="nav-bar categories-font">Ofertas</li></a>
+
+                </ul>
+                <ul class="dropdown">
+                    <a href="#"><li class="nav-bar"><i class="fas fa-shopping-basket fa-2x hvr-grow"></i></li></a>
+                    <a href="#"><li class="nav-bar"><i class="fas fa-user-circle fa-2x hvr-grow"></i></li></a>
+
+                </ul>
+                   
+                
+            </nav>
+        </div>
+   </header>
+ 
+
+    <section class="volver">
+        <a href="../ropa.html">
+            <p>Volver</p>
+        </a>
+
+    </section>
+    <div class="product">
+
+            <!-- para poder poner por ejemplo un icono o cualquier cosa adentro de una imagen, el padre (imagen) tiene que ir con position relative y el hijo (icono) tiene que tener position absolute -->
+
+        <div class="img-container">
+
+                <img src="https://http2.mlstatic.com/D_NQ_NP_997190-MLA45405902991_032021-W.jpg" style="height: 400px; width: auto;" alt="">
+
+        </div>
+        <div class="product-information">
+            <p class="descripcion-producto">Pantalon Azul Marvel Avengers Azul.</p>
+
+
+            <form action="GET" class="compra">
+                <p class="precio">$2.350</p>
+                <a href="" class="metodos-pago">Ver metodos de pago</a>
+                <label class="container-cost">Unidades
+                    <input type="number" name="precio" id="precio" class="input-cost" value="1">
+                </label>
+
+                <input type="button" value="Agregar al Carrito" class="buy-button">
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

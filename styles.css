@@ -49,7 +49,7 @@ header{
     padding: 1%;
     position: sticky;
     top: 0px;
-    z-index: 15;
+    z-index: 50;
 }
 .dropdown{
     margin-right: 4%;
@@ -208,9 +208,21 @@ main img{
     text-align: left;
 
 }
+.precio-tachado{
+    text-decoration:line-through;
+    margin-right: auto;
+    font-size: 0.9em;
+    color: var(--main-grey);
+}
 .precio{
-    font-weight: bold;
     font-size: 1.2em;
+}
+.oferta{
+    margin-right: auto;
+    background-color: var(--main-pastel-red);
+    padding: 2px;
+    border-radius: 2px;
+    font-size: 0.9em;
 }
 .img-container, .container-sticker{
     position: relative;

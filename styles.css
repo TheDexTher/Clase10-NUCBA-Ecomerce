@@ -18,7 +18,7 @@
 }
 /* Colors */
 :root{
-    --main-rich-black:#0b090a;
+    --main-rich-black:#111416;
     --main-Special-Black:#161a1d;
     --main-ultra-dark-red:#660708;
     --main-black-red:#a4161a;
@@ -45,7 +45,7 @@ body{
 
 /* header */
 header{
-    background-color: var(--main-whiter-grey);
+    background-color: var(--main-rich-black);
     padding: 1%;
     position: sticky;
     top: 0px;
@@ -124,7 +124,7 @@ header{
 
 .nav-bar{
     list-style: none;
-    color: var(--main-Special-Black);
+    color: var(--main-ultra-whiter-grey);
     padding: 0px;
     font-weight: normal;
     display: inline;
@@ -157,8 +157,9 @@ h1{
 h1 a{
     text-decoration: none;
     font-family: "Marvel's Luke Cage Regular";
-    color: var(--main-Special-Black);
+    color: var(--main-ultra-whiter-grey);
 }
+
 p{
     color: var(--main-ultra-whiter-grey);
 
@@ -265,13 +266,14 @@ main img{
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    width: 240px;
+    box-sizing: content-box;
+    width: 25%;
     align-items: center;
     margin-top: 1px;
     margin-bottom: 50px;
     box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.56);
--webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.56);
--moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.56);
 }
 
 .product button{
@@ -335,6 +337,7 @@ main img{
         display: inline;
         margin: auto;
         margin: 10px;
+        color: var(--main-ultra-whiter-grey);
     }
     h1{
         font-size: 1em;
@@ -397,7 +400,7 @@ main img{
 
 @media (min-width:481px) and (max-width:1023px){
     .product{
-        width: 50%;
+        width: 38%;
     }
     .icon-menu{
         position: relative;
@@ -455,8 +458,16 @@ main img{
         font-size: .6em;
     }
 }
-@media (max-width:1024px){
+@media (min-width:1024px) and (max-width:1240px){
     h1{
         width: 50%;
+    }
+    .product{
+        width: 25%;
+    }
+}
+@media (min-width:1241px){
+    .product{
+        width: 19%;
     }
 }

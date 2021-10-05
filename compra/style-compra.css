@@ -413,6 +413,7 @@ img{
         display: inline;
         margin: auto;
         margin: 10px;
+        color:var(--main-ultra-whiter-grey);
     }
     h1{
         font-size: 1.3em;

@@ -45,7 +45,7 @@ body{
 
 /* header */
 header{
-    background-color: var(--main-whiter-grey);
+    background-color: var(--main-Special-dark-Black);
     padding: 1%;
     position: sticky;
     top: 0px;
@@ -124,7 +124,7 @@ header{
 
 .nav-bar{
     list-style: none;
-    color: var(--main-Special-Black);
+    color: var(--main-ultra-whiter-grey);
     padding: 0px;
     font-weight: normal;
     display: inline;
@@ -166,8 +166,6 @@ ul a{
 h1{
     padding: 1%;
     font-size: 1.5em;
-    text-align: center;
-
     width: 29%;
     
 
@@ -176,10 +174,10 @@ h1{
 h1 a{
     text-decoration: none;
     font-family: "Marvel's Luke Cage Regular";
-    color: var(--main-Special-Black);
+    color: var(--main-ultra-whiter-grey);
 }
 p{
-    color: var(--main-whiter-grey);
+    color: var(--main-ultra-whiter-grey);
     font-size: 1.5em;
 }
 
@@ -332,6 +330,7 @@ img{
         display: inline;
         margin: auto;
         margin: 10px;
+        color: var(--main-ultra-whiter-grey);
     }
     h1{
         font-size: 1em;
@@ -349,26 +348,31 @@ img{
         position: absolute;
         background-color: var(--main-Special-Black);
         z-index: 10;
-        top: 40px;
+        box-sizing: content-box;
         padding: 20px;
-        box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -webkit-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -moz-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        width: 160px;
+        left: -10px;
+        top: 40px;
+        width: 100vw;
+        height: max-content;
     }
     .menu-responsive li{
         color: var(--main-ultra-whiter-grey);
         font-size: 1em;
-
+        display: block;
+        margin: 10px 0;
         
     }
     .categories-font:hover{
         color: var(--main-grey);
     }
     .categories-dropdown{
-        right: -175px;
-        top: -15px;
+        left: -20px;
+        width: 100vw;
+        top: 45px;
+        padding: 0px 25px;
+        border-top: 1px solid var(--main-rich-black);
     }
+
 
     .categories{
         display: none;
@@ -377,7 +381,7 @@ img{
         padding: 0px;
     }
     .dropdown{
-        width: 80%;
+        width: 100%;
     }
     .icon-user{
         display: none;
@@ -391,6 +395,7 @@ img{
     }
     .product-information{
         width: 90%;
+        margin: auto;
         margin-top: 10px;
     }
     .img-container img{
@@ -431,25 +436,29 @@ img{
         position: absolute;
         background-color: var(--main-Special-Black);
         z-index: 10;
-        top: 40px;
+        box-sizing: content-box;
         padding: 20px;
-        box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -webkit-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -moz-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        width: 160px;
+        left: -10px;
+        top: 40px;
+        width: 100vw;
+        height: max-content;
     }
     .menu-responsive li{
         color: var(--main-ultra-whiter-grey);
         font-size: 1em;
-
+        display: block;
+        margin: 10px 0;
         
     }
     .categories-font:hover{
         color: var(--main-grey);
     }
     .categories-dropdown{
-        right: -175px;
-        top: -15px;
+        left: -20px;
+        width: 100vw;
+        top: 45px;
+        padding: 0px 25px;
+        border-top: 1px solid var(--main-rich-black);
     }
 
     .categories{
@@ -464,9 +473,22 @@ img{
     .icon-arrow-right{
         font-size: .6em;
     }
+    .product{
+        width: 95%;
+        flex-direction: column;
+    }
+    .product img{
+        margin: auto;
+    }
+    .product-information{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
 }
-@media (max-width:1024px){
+@media (min-width:1024px) and (max-width:1240px){
     h1{
         width: 50%;
     }
+
 }

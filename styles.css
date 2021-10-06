@@ -35,18 +35,19 @@
 *{
     margin: 0;
     font-family: 'Dosis', sans-serif;
+
     
 }
 body{
     background-color: var(--main-Special-Black);
-    
+
 }
 
 
 /* header */
 header{
     background-color: var(--main-rich-black);
-    padding: 1%;
+    box-sizing: content-box;
     position: sticky;
     top: 0px;
     z-index: 50;
@@ -54,8 +55,10 @@ header{
 .dropdown{
     margin-right: 4%;
     text-align: right; 
-    padding: 1%;
+    padding: 3% 1% 1% 1%;
     width: 30%;
+    margin-bottom: 2%;
+
 }
 
 .icon-down-categories{
@@ -63,7 +66,7 @@ header{
 }
 .navigation-title{
     width: 100%;
-    padding: 1% 0;
+
     display: flex;
 }
 .nav-flex{
@@ -72,6 +75,7 @@ header{
     padding: 0px;
     justify-content: space-between;
     align-items: center;
+ 
 }
 .categories-menu:hover .categories-dropdown{
     display: block;
@@ -142,13 +146,11 @@ ul a{
     text-decoration: none;
 }
 
-/* cuerpo */
-
 h1{
     padding: 1%;
     font-size: 1.5em;
-    text-align: center;
-
+    display: block;
+    margin: auto 0;
     width: 29%;
     
 
@@ -159,6 +161,12 @@ h1 a{
     font-family: "Marvel's Luke Cage Regular";
     color: var(--main-ultra-whiter-grey);
 }
+h1 a:hover{
+    color: var(--main-ultra-whiter-grey);
+}
+
+
+/* cuerpo */
 
 p{
     color: var(--main-ultra-whiter-grey);
@@ -182,8 +190,18 @@ main img{
     object-fit: cover;
     border-radius: 7px;
 }
+.carousel{
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+}
+.carousel-item img{
+    width: 80%;
+    max-height: 430px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
 
-
+}
 
 .description{
     background-color: var(--main-pastel-red);
@@ -198,6 +216,7 @@ main img{
      font-weight: normal;
      font-size: 1.3em;
      padding: 0;
+     margin: 0;
 
 }
 
@@ -337,6 +356,7 @@ main img{
         display: inline;
         margin: auto;
         margin: 10px;
+        
         color: var(--main-ultra-whiter-grey);
     }
     h1{
@@ -347,33 +367,40 @@ main img{
     }
     .menu-responsive{
         display: none;
+        
     }
     .icon-menu:hover .menu-responsive{
         display: block;
+
     }
+
     .menu-responsive{
         position: absolute;
         background-color: var(--main-Special-Black);
         z-index: 10;
-        top: 40px;
+        box-sizing: content-box;
         padding: 20px;
-        box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -webkit-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -moz-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        width: 160px;
+        left: -10px;
+        top: 40px;
+        width: 100vw;
+        height: max-content;
     }
     .menu-responsive li{
         color: var(--main-ultra-whiter-grey);
         font-size: 1em;
-
+        display: block;
+        margin: 10px 0;
         
     }
     .categories-font:hover{
         color: var(--main-grey);
     }
     .categories-dropdown{
-        right: -175px;
-        top: -15px;
+        left: -20px;
+        width: 100vw;
+        top: 45px;
+        padding: 0px 25px;
+        border-top: 1px solid var(--main-rich-black);
     }
 
     .categories{
@@ -394,6 +421,18 @@ main img{
     .product{
         width: 70%;
     }
+    .carousel{
+        max-height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    .carousel-item{
+       height: 120px;
+
+    
+    }
 }
 
 /* Tablets */
@@ -405,8 +444,9 @@ main img{
     .icon-menu{
         position: relative;
         display: inline;
-        margin: auto;
-        margin: 10px;
+        color: var(--main-ultra-whiter-grey);
+
+        margin: 15px 10px;
     }
     h1{
         font-size: 1.3em;
@@ -424,25 +464,29 @@ main img{
         position: absolute;
         background-color: var(--main-Special-Black);
         z-index: 10;
-        top: 40px;
+        box-sizing: content-box;
         padding: 20px;
-        box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -webkit-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        -moz-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.43);
-        width: 160px;
+        left: -10px;
+        top: 40px;
+        width: 100vw;
+        height: max-content;
     }
     .menu-responsive li{
         color: var(--main-ultra-whiter-grey);
         font-size: 1em;
-
+        display: block;
+        margin: 10px 0;
         
     }
     .categories-font:hover{
         color: var(--main-grey);
     }
     .categories-dropdown{
-        right: -175px;
-        top: -15px;
+        left: -20px;
+        width: 100vw;
+        top: 55px;
+        padding: 0px 30px;
+        border-top: 1px solid var(--main-rich-black);
     }
 
     .categories{
@@ -457,6 +501,17 @@ main img{
     .icon-arrow-right{
         font-size: .6em;
     }
+    .carousel{
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    .carousel-item{
+       height: 250px;
+
+    
+    }
 }
 @media (min-width:1024px) and (max-width:1240px){
     h1{
@@ -464,6 +519,17 @@ main img{
     }
     .product{
         width: 25%;
+    }
+    .carousel{
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    .carousel-item{
+       height: 350px;
+
+    
     }
 }
 @media (min-width:1241px){
